@@ -39,11 +39,10 @@ function setStream(){
 //positioning the blocks
 //find the column with minimum value and get index
 //left = index* (columnWidth+margin) + margin
-//top = value of column 
 
 function position (){
 	$('.stream').each(function(){
-		var min = Array.min(columnItems); //Math.min.apply(Math, columnItems);//
+		var min = Array.min(columnItems); 
 		var index = $.inArray(min, columnItems);
 		var left = (index*(columnWidth+margin)) + margin;
 		$(this).css({
